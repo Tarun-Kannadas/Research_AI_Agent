@@ -60,16 +60,16 @@ Enter your topic (e.g., “Tell me about the history of quantum computing”).
 
 The agent will "think", pull data from the internet, parse it into a structured Pydantic object, and save the result to research_output.txt.
 
-📁 File Structure
-main.py - The core agent initialization, prompt templates, and execution loop.
+## 📁 File Structure
+- main.py - The core agent initialization, prompt templates, and execution loop.
 
-tools.py - Contains the configured DuckDuckGo, Wikipedia, and Custom File Saver tools.
+- tools.py - Contains the configured DuckDuckGo, Wikipedia, and Custom File Saver tools.
 
-.env - (Ignored by Git) Stores your API credentials securely.
+- .env - (Ignored by Git) Stores your API credentials securely.
 
-research_output.txt - (Generated) The output log where the AI saves its research.
+- research_output.txt - (Generated) The output log where the AI saves its research.
 
-🛑 Handling Rate Limits (Free Tier)
+## 🛑 Handling Rate Limits (Free Tier)
 If you are using the free tier of Google AI Studio, you may encounter a 429 RESOURCE_EXHAUSTED error. This is normal, as the free tier is limited to 15 Requests Per Minute (RPM).
 
 Fix: Wait 60 seconds before running your next query, or add a billing account in Google AI Studio to lift the limits.
