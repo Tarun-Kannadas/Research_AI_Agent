@@ -1,0 +1,17 @@
+# Environment Variables / Secrets
+.env
+
+# Virtual Environments
+venv/
+
+# Python Caches
+__pycache__/
+*.pyc
+
+# Project specific outputs
+research_output.txt
+
+# IDE Settings / OS Files
+.vscode/
+.idea/
+.DS_Store
